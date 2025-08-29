@@ -62,6 +62,9 @@ def process_data(data_list):
 
 
 # ---------- POST Endpoint ----------
+@app.get("/bfhl")
+def bfhl():
+    return {"operation_code": 1}
 @app.post("/bfhl")
 async def bfhl(input_data: DataInput):
     try:
